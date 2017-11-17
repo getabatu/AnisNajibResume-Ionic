@@ -1,0 +1,49 @@
+<ion-header >
+  <ion-navbar color="primary">
+    <ion-title>
+      
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 style="color:#000000;font-weight:300;font-style:italic;text-align:center;">Achivement</h3>
+
+    <h4 style="font-style:italic;text-align:center;">School</h4>
+    
+
+    <ion-card>
+      <ion-card-content>
+        <ion-slides 
+                autoplay="5000" 
+                loop="true" 
+                speed="3000"
+                pager 
+                style="max-height:90%;max-width:98%;padding-left: 10px;">  
+          
+          <ion-slide>
+          <img src="assets/img/ac1.jpg">
+          </ion-slide>
+
+          <ion-slide>
+          <img src="assets/img/ac3.jpg">
+          </ion-slide>
+
+          <ion-slide>
+          <img src="assets/img/ac2.jpg">
+          </ion-slide>
+
+      </ion-slides>
+    </ion-card-content>
+  </ion-card>
+  <ion-grid>
+    <ion-row style="text-align:center">
+      <ion-col col-md-5>
+        <ion-card><input (click)="workPage();" type="image" src="assets/img/work.png" style = "max-width:70%" /></ion-card>
+      </ion-col>
+      <ion-col col-md-5>
+        <ion-card><input (click)="otherPage();" type="image" src="assets/img/other.png" style = "max-width:85%" /></ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
